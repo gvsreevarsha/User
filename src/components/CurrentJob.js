@@ -9,7 +9,7 @@ function CurrentJob() {
                 <CardSubtitle align="left">Current Job Suitability</CardSubtitle>
                 <hr></hr>
                 <div class="container-fluid">
-                  <Row>
+                  <Row className="p-4">
                     <Col lg="4" md="6" sm="12">
                       <DoughnutExample/>
                       Analyst
@@ -22,8 +22,6 @@ function CurrentJob() {
                       <DoughnutExample/>
                       Plant Engineer
                     </Col>
-                  </Row>
-                  <Row>
                     <Col lg="4" md="6" sm="12">
                       <DoughnutExample/>
                       RRD Engineer
@@ -36,8 +34,6 @@ function CurrentJob() {
                       <DoughnutExample/>
                       Operations Engineer
                     </Col>
-                  </Row>
-                  <Row>
                     <Col lg="4" md="6" sm="12">
                       <DoughnutExample/>
                       Software Developer

@@ -9,7 +9,7 @@ class leaderboard extends Component{
   render(){
   return (
     <div className="lb">
-      <Table striped bordered hover zoom>
+      <Table striped bordered hover zoom responsive>
         <thead>
           <tr>
             <th>Rank</th>
@@ -23,7 +23,7 @@ class leaderboard extends Component{
           </tr>
         </thead>
         <tbody>
-          <tr className="rank1" style={{fontWeight: 'bold'}}>
+          <tr className="rank1">
             <th scope="row">1</th>
                         <td>321710XXXXXX</td>
             <td>Name-1</td>
@@ -32,7 +32,7 @@ class leaderboard extends Component{
             <td>19</td>
             <td>3</td>
           </tr>
-          <tr className="rank2" style={{fontWeight: 'bold'}}>
+          <tr className="rank2">
             <th scope="row">2</th>
             
             <td>321710XXXXXX</td>
@@ -42,7 +42,7 @@ class leaderboard extends Component{
             <td>13</td>
             <td>4</td>
           </tr>
-          <tr className="rank3" style={{fontWeight: 'bold'}} >
+          <tr className="rank3" >
             <th scope="row">3</th>
                         <td>321710XXXXXX</td>
             <td>Name-3</td>

@@ -5,7 +5,6 @@ import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron }
 import leaderboard from '../leaderboard';
 import Dashboard from '../Dashboard';
 import personaldetails from '../personaldetails';
-import Caleder from '../Calender';
 import changepassword from '../changepassword';
 
 class Navbar1 extends React.Component{
@@ -28,7 +27,7 @@ class Navbar1 extends React.Component{
   return (
     <div className="Navbar1">  
         <Router>
-        <Navbar dark color="dark" expand="md">
+        <Navbar dark color="dark" expand="lg">
           <div class="container-fluid">
           <NavbarToggler onClick={this.toggleNav} />
             <NavbarBrand className="mr-auto" href="/"><img src='assets/images/gitamlogo.png' height="50" width="50"/>GITAM Bengaluru</NavbarBrand>
@@ -36,37 +35,30 @@ class Navbar1 extends React.Component{
                 <span className="tab1"></span>
                     <Nav navbar>
                             <NavItem>
-                                <NavLink className="nav-link active col-md-2" tag={Link}  to='/Dashboard' style={{color:"lightgreen"}}><span class="fa fa-home fa-lg"></span><br></br>Dashboard</NavLink>
+                                <NavLink align="left" className="nav-link active" tag={Link}  to='/Dashboard' style={{color:"lightgreen"}}><span class="fa fa-home fa-lg"></span>&nbsp;Dashboard</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link " tag={Link} to='/personaldetails' style={{color:"lightgreen"}}><span class="fa fa-info fa-lg"></span><br></br>Personal Details</NavLink>
+                                <NavLink align="left" className="nav-link " tag={Link} to='/personaldetails' style={{color:"lightgreen"}}><span class="fa fa-info fa-lg"></span>&nbsp;Personal Details</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link col-md-2" tag={Link} to='/Caleder' style={{color:"lightgreen"}}><span class="fa fa-calendar"></span><br></br>Calender</NavLink>
+                                <NavLink align="left" className="nav-link" tag={Link} to='/Calender' style={{color:"lightgreen"}}><span class="fa fa-calendar"></span>&nbsp;Calender</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link " tag={Link} to={'/leaderboard'} style={{color:"lightgreen"}}><span class="fa fa-trophy"></span><br></br>Leader Board</NavLink>
+                                <NavLink align="left" className="nav-link " tag={Link} to={'/leaderboard'} style={{color:"lightgreen"}}><span class="fa fa-trophy"></span>&nbsp;Leader Board</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link " tag={Link} to='/changepassword' style={{color:"lightgreen"}}><span class="fa fa-key"></span><br></br>Change Password</NavLink>
+                                <NavLink align="left" className="nav-link " tag={Link} to='/changepassword' style={{color:"lightgreen"}}><span class="fa fa-key"></span>&nbsp;Change Password</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link col-md-2" tag={Link} to='/logout' style={{color:"lightgreen"}}><span class="fa fa-sign-out"></span><br></br>Logout</NavLink>
+                                <NavLink align="left" className="nav-link" tag={Link} to='/logout' style={{color:"lightgreen"}}><span class="fa fa-sign-out"></span>&nbsp;Logout</NavLink>
                             </NavItem>
                     </Nav>
-                    
-                
-                <div className="p-2 welcome" >  
-                  Welcome<br></br>Name
-                </div>
-                <img src='assets/images/gitamlogo.png' height="50" width="50"></img>
                 </Collapse>
-          </div>
+          </div>  
+                <span className="col-xs-6 welcome">Welcome<br></br>Name</span><div className="col-xs-6"><img src='assets/images/gitamlogo.png' height="50" width="50"></img></div>
         </Navbar>
         <Switch>
-          <Route exact path="/" component={Dashboard}/>
-          <Route exact path="/Dashboard" component={Dashboard}/>
-          <Route exact path="/Caleder" component={Caleder}/>
+            <Route exact path="/Dashboard" component={Dashboard} />
             <Route exact path="/leaderboard" component={leaderboard} />
             <Route exact path="/personaldetails" component={personaldetails} />
             <Route exact path="/changepassword" component={changepassword} />

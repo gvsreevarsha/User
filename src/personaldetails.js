@@ -1,4 +1,5 @@
 import React,{Component} from 'react'; 
+import {Form} from 'react-bootstrap';
 import FilesUploadComponent from './components/FilesUploadComponent';//import React from 'react';
 import './App.css';
 import { Card,CardTitle, CardSubtitle,Container,Row,Col,Alert,Collapse,Button } from 'reactstrap';
@@ -7,239 +8,147 @@ import 'font-awesome/css/font-awesome.css';
 import 'bootstrap-social/bootstrap-social.css';
 class personaldetails extends Component { 
 render() { 
-    const isBackgroundRed = true;
 	return ( 
-    <div class="container" style={
-      {
-       border: '2px solid black'
-       
-      }
-    }
-  >
-  <h1 align="center">Personal Details</h1>
-            <Row>
-              <Col>&nbsp;</Col>
-            </Row>
-            <Row>
-              
-              <Col md="3">
-                <h6>USN</h6>
-                <Card color="white" className="Rounded p-0">
-                <p align="middle">xxxx</p>
-
-                </Card>
-              </Col>
-              <Col md="3">
-                <h6>Campus</h6>
-                <Card color="white" className="Rounded p-0">
-                <p align="middle">xxxx</p>
-                </Card>
-              </Col>
-              <Col md="3">
-                <h6>College</h6>
-                <Card color="white" className="Rounded p-0">
-                <p align="middle">xxxx</p>
-
-                </Card>
-              </Col>
-              <>
-    <span className="block-example border border-dark">
-      
-    <img src='assets/images/a.png' height="100" width="100" resizeMode= 'cover'></img>
-    <p align="center">Mr.John</p>
-    </span>
-            </>
+    <div class="container-fluid">
+      <h1 align="center">Personal Details</h1>
+      <Row>
+        <Col>&nbsp;</Col>
+      </Row>
+      <Form>
+        <Row>
+          <Col lg="4" md="6" xs="12">
+            <Form.Group controlId="RollNo">
+              <Form.Label><h6>Roll No</h6></Form.Label>
+              <Form.Control type="text" placeholder="xxx" /> 
+            </Form.Group>
+          </Col>
+          <Col lg="4" md="6" xs="12">
+            <Form.Group controlId="Campus">
+              <Form.Label><h6>Campus</h6></Form.Label>
+              <Form.Control type="text" placeholder="xxx" /> 
+            </Form.Group>
+          </Col>
+          <Col lg="4" md="6" xs="12">
+            <Form.Group controlId="College">
+              <Form.Label><h6>College</h6></Form.Label>
+              <Form.Control type="text" placeholder="xxx" /> 
+            </Form.Group>
+          </Col>
+          <Col lg="4" md="6" xs="12">
+            <Form.Group controlId="Batch">
+              <Form.Label><h6>Batch</h6></Form.Label>
+              <Form.Control type="text" placeholder="xxx" /> 
+            </Form.Group>
+          </Col>
+          <Col lg="4" md="6" xs="12">
+            <Form.Group controlId="Degree">
+              <Form.Label><h6>Degree</h6></Form.Label>
+              <Form.Control type="text" placeholder="xxx" /> 
+            </Form.Group>
+          </Col>
+          <Col lg="4" md="6" xs="12">
+            <Form.Group controlId="Program">
+              <Form.Label><h6>Program</h6></Form.Label>
+              <Form.Control type="text" placeholder="xxx" /> 
+            </Form.Group>
+          </Col>
+          <Col lg="4" md="6" xs="12">
+            <Form.Group controlId="Branch">
+              <Form.Label><h6>Branch</h6></Form.Label>
+              <Form.Control type="text" placeholder="xxx" /> 
+            </Form.Group>
+          </Col>
+          <Col lg="4" md="6" xs="12">
+            <Form.Group controlId="Semester">
+              <Form.Label><h6>Semester</h6></Form.Label>
+              <Form.Control type="text" placeholder="xxx" /> 
+            </Form.Group>
+          </Col>
+          <Col lg="4" md="6" xs="12">
+            <Form.Group controlId="Section">
+              <Form.Label><h6>Section</h6></Form.Label>
+              <Form.Control type="text" placeholder="xxx" /> 
+            </Form.Group>
+          </Col>
+          <Col lg="4" md="6" xs="12">
+            <Form.Group controlId="First Name">
+              <Form.Label><h6>First Name</h6></Form.Label>
+              <Form.Control type="text" placeholder="xxx" /> 
+            </Form.Group>
+          </Col>
+          <Col lg="4" md="6" xs="12">
+            <Form.Group controlId="Middle Name">
+              <Form.Label><h6>Middle Name</h6></Form.Label>
+              <Form.Control type="text" placeholder="xxx" /> 
+            </Form.Group>
+          </Col>
+          <Col lg="4" md="6" xs="12">
+            <Form.Group controlId="Last Name">
+              <Form.Label><h6>Last Name</h6></Form.Label>
+              <Form.Control type="text" placeholder="xxx" /> 
+            </Form.Group>
+          </Col>
+          <Col lg="4" md="6" xs="12">
+            <Form.Group controlId="DOB">
+              <Form.Label><h6>DOB</h6></Form.Label>
+              <Form.Control type="text" placeholder="xxx" /> 
+            </Form.Group>
+          </Col>
+          <Col lg="4" md="6" xs="12">
+            <Form.Group controlId="Gender">
+              <Form.Label><h6>Gender</h6></Form.Label>
+              <Form.Control type="text" placeholder="xxx" /> 
+            </Form.Group>
+          </Col>
+          <Col lg="4" md="6" xs="12">
+            <Form.Group controlId="Blood Group">
+              <Form.Label><h6>Blood Group</h6></Form.Label>
+              <Form.Control type="text" placeholder="xxx" /> 
+            </Form.Group>
+          </Col>
+          <Col lg="4" md="6" xs="12">
+            <Form.Group controlId="FatherName">
+              <Form.Label><h6>Father's Name</h6></Form.Label>
+              <Form.Control type="text" placeholder="xxx" /> 
+            </Form.Group>
+          </Col>
+          <Col lg="4" md="6" xs="12">
+            <Form.Group controlId="MotherName">
+              <Form.Label><h6>Mother's Name</h6></Form.Label>
+              <Form.Control type="text" placeholder="xxx" /> 
+            </Form.Group>
+          </Col>
+          <Col lg="4" md="6" xs="12">
+            <Form.Group controlId="Reservation Category">
+              <Form.Label><h6>Reservation Category</h6></Form.Label>
+              <Form.Control type="text" placeholder="xxx" /> 
+            </Form.Group>
+          </Col>
+        </Row>
+        <Row>&nbsp;</Row>
+        <Row>
+          <Col lg="1" md="6" xs="12"><h6>Photo</h6></Col>
+          <Col lg="5" md="6" xs="12">
+            <Card className="p-2">
+              <Row>
+                <Col><input type="file" multiple/></Col>
+                <Col><button className="btn btn-primary p-1" type="submit">Upload</button></Col>
               </Row>
+            </Card>
+          </Col>
+          <Col lg="1" md="6" xs="12"><h6>Resume</h6></Col>
+          <Col lg="5" md="6" xs="12">
+            <Card className="p-2">
               <Row>
-              <Col>&nbsp;</Col>
-            </Row>
-              
-            <Row>
-              <Col md="3">
-              <h6>Batch</h6>
-              <Card color="white" className="Rounded p-0">
-                <p align="middle">xxxx</p>
-                </Card>
-              </Col>
-              <Col md="3">
-              <h6>Degree</h6>
-              <Card color="white" className="Rounded p-0">
-                <p align="middle">xxxx</p>
-          
-                </Card>
-              </Col>
-              <Col md="3">
-              <h6>Program</h6>
-              <Card color="white" className="Rounded p-0">
-                <p align="middle">xxxx</p>
-                </Card>
-              </Col>
-              <Col md="3">
-              <h6>Branch</h6>
-              <Card color="white" className="Rounded p-0">
-                <p align="middle">xxxx</p>
-
-                </Card>
-              </Col>
+                <Col><input type="file" multiple/></Col>
+                <Col><button className="btn btn-primary p-1" type="submit">Upload</button></Col>
               </Row>
-              <Row>
-              <Col>&nbsp;</Col>
-            </Row>
-            <Row>
-              <Col>&nbsp;</Col>
-            </Row>
-            <Row>
-              <Col md="3">
-              <h6>Semester</h6>
-              <Card color="white" className="Rounded p-0">
-                <p align="middle">xxxx</p>
-                </Card>
-              </Col>
-              <Col md="3">
-              <h6>Section</h6>
-              <Card color="white" className="Rounded p-0">
-                <p align="middle">xxxx</p>
-          
-                </Card>
-              </Col>
-              <Col md="3">
-              <h6>Student Phone Number</h6>
-              <Card color="white" className="Rounded p-0">
-                <p align="middle">xxxx</p>
-          
-                </Card>
-              </Col>
-              <Col md="3">
-              <h6>Student Email</h6>
-              <Card color="white" className="Rounded p-0">
-                <p align="middle">xxxx</p>
-                </Card>
-              </Col>
-             
-
-              </Row>
-              <Row>
-              <Col>&nbsp;</Col>
-            </Row>
-            <Row>
-              <Col>&nbsp;</Col>
-            </Row>
-            <Row>
-              <Col md="3">
-              <h6>First Name</h6>
-              <Card color="white" className="Rounded p-0">
-                <p align="middle">xxxx</p>
-                </Card>
-              </Col>
-              <Col md="3">
-              <h6>Middle Name</h6>
-              <Card color="white" className="Rounded p-0">
-                <p align="middle">xxxx</p>
-          
-                </Card>
-              </Col>
-              <Col md="3">
-              <h6>Last Name</h6>
-              <Card color="white" className="Rounded p-0">
-                <p align="middle">xxxx</p>
-
-                </Card>
-              </Col>
-              <Col md="3">
-              <h6>DOB</h6>
-              <Card color="white" className="Rounded p-0">
-                <p align="middle">xxxx</p>
-
-                </Card>
-              </Col>
-              </Row>
-              <Row>
-              <Col>&nbsp;</Col>
-            </Row>
-            <Row>
-              <Col>&nbsp;</Col>
-            </Row>
-            <Row>
-              
-              <Col md="3">
-              <h6>Gender</h6>
-              <Card color="white" className="Rounded p-0">
-                <p align="middle">xxxx</p>
-          
-                </Card>
-              </Col>
-              <Col md="3">
-              <h6>Blood Group</h6>
-              <Card color="white" className="Rounded p-0">
-                <p align="middle">xxxx</p>
-
-                </Card>
-              </Col>
-              <Col md="3">
-              <h6>Fathers Name</h6>
-              <Card color="white" className="Rounded p-0">
-                <p align="middle">xxxx</p>
-                </Card>
-              </Col>
-              <Col md="3">
-              <h6>Mothers Name</h6>
-              <Card color="white" className="Rounded p-0">
-                <p align="middle">xxxx</p>
-          
-                </Card>
-              </Col>
-              </Row>
-              <Row>
-              <Col>&nbsp;</Col>
-            </Row>
-            <Row>
-              <Col>&nbsp;</Col>
-            </Row>
-            <Row>
-            <Col md="3">
-              <h6>Parents Email</h6>
-              <Card color="white" className="Rounded p-0">
-                <p align="middle">xxxx</p>
-
-                </Card>
-              </Col>
-              <Col md="3">
-              <h6>Reservation category</h6>
-              <Card color="white" className="Rounded p-0">
-                <p align="middle">xxxx</p>
-
-                </Card>
-              </Col>
-              </Row>
-              <Row>
-              <Col>&nbsp;</Col>
-            </Row>
-            <Row>
-              <Col>&nbsp;</Col>
-            </Row>
-              <Row>
-              <Col md="6">
-              <h3>Cover Letter</h3>
-              <FilesUploadComponent />
-              </Col>
-              <Col md="6">
-              <h3>Resume</h3>
-              <FilesUploadComponent />
-              </Col>
-            </Row>
-            <Row>
-              <Col>&nbsp;</Col>
-            </Row>
-            <Row>
-              <Col>&nbsp;</Col>
-            </Row>
-    
-    </div> 
-            
-		  
-		 
-				
-		 
+            </Card>
+          </Col>
+        </Row>
+        <Row>&nbsp;</Row>
+      </Form>
+    </div>  
 	); 
 	} 
 } 
