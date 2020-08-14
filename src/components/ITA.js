@@ -9,7 +9,7 @@ function ARI() {
           <Row>
             <Col md="12">
               <Card className="Rounded p-3">
-                <CardSubtitle align="left">ITA</CardSubtitle>
+                <CardSubtitle align="left">Integrated Training Attendance</CardSubtitle>
                 <hr></hr>
                 <BarExample/>
               </Card>

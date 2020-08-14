@@ -1,5 +1,9 @@
 import React from 'react';
 import { Card,CardTitle,CardSubtitle,CardText,Row,Col,Alert,Table } from 'reactstrap';
+import { Link, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router,NavLink } from "react-router-dom";
+//import Hyperlink from 'react-native-hyperlink';
+//import SocialMediaBar from 'react-social-media-bar';
 
 class Footer extends React.Component{
   render(){
@@ -7,7 +11,7 @@ class Footer extends React.Component{
     <div className="footer">  
       <footer>
         <div className="footer">
-            <div className="footer1">
+            <div className="footer1 pt-2">
               <div>
                   Developers
               </div>
@@ -15,57 +19,38 @@ class Footer extends React.Component{
             <div className="footer2">
                   <div className="container-fluid">
                     <Row>
+                      <Col></Col>
+                      <Col xl="12" lg="12" md="12" xs="12" className="p-2"><img src='assets/images/Kishor.jpeg' height="70" width="70"></img><br></br><div style={{fontSize:"8px"}}><center>Dr.Kishor Buddha</center></div></Col>
+                      <Col></Col>
+                    </Row>
+                    <Row>
                       <Col>
-                        Siddharth Datthathreya
+                        <Row>
+                          <Col xs="12">
+                            <Row>
+                              <Col xl="2"></Col>
+                              <Col xl="1" lg="3" md="3" xs="12"><img src='assets/images/Siddharth.jpg' height="70" width="70"></img><br></br><div style={{fontSize:"11px"}}><center>Siddharth</center></div></Col>
+                              <Col xl="1" lg="3" md="3" xs="12"><img src='assets/images/DeviPriya.jpg' height="70" width="70"></img><br></br><div style={{fontSize:"11px"}}><center>Devi Priya</center></div></Col>
+                              <Col xl="1" lg="3" md="3" xs="12"><img src='assets/images/Avinash.jpg' height="70" width="70"></img><br></br><div style={{fontSize:"11px"}}><center>Avinash</center></div></Col>
+                              <Col xl="1" lg="3" md="3" xs="12"><img src='assets/images/varsha.jpg' height="70" width="70"></img><br></br><div style={{fontSize:"11px"}}><center>Sree Varsha</center></div></Col>
+                              <Col xl="1" lg="3" md="3" xs="12"><img src='assets/images/Madhu.jpg' height="70" width="70"></img><br></br><div style={{fontSize:"11px"}}><center>Madhu Priya</center></div></Col>
+                              <Col xl="1" lg="3" md="3" xs="12"><img src='assets/images/Jain.jpeg' height="70" width="70"></img><br></br><div style={{fontSize:"11px"}}><center>Gulab Jain</center></div></Col>
+                              <Col xl="1" lg="3" md="3" xs="12"><img src='assets/images/Charan.jpg' height="70" width="70"></img><br></br><div style={{fontSize:"11px"}}><center>Charan</center></div></Col>
+                              <Col xl="1" lg="3" md="3" xs="12"><img src='assets/images/souji.jpg' height="70" width="70"></img><br></br><div style={{fontSize:"11px"}}><center>Soujanya</center></div></Col>
+                              <Col xl="2"></Col>
+                            </Row>
+                          </Col>
+                        </Row>
                       </Col>
                     </Row>
                     <Row>
-                      <Col lg="6" md="6" sm="12">
-                        Devi Priya
-                      </Col>
-                      <Col lg="6" md="6" sm="12">
-                        Avinash Chunduri
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col lg="3" md="6" sm="12">
-                        Soujanya Muthyala
-                      </Col>
-                      <Col lg="3" md="6" sm="12">
-                        Sree Varsha
-                      </Col>
-                      <Col lg="3" md="6" sm="12">
-                        Charan Varikuti
-                      </Col>
-                      <Col lg="3" md="6" sm="12">
-                        Deepak Desai
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col lg="3" md="6" sm="12">
-                        Madhu Priya
-                      </Col>
-                      <Col lg="3" md="6" sm="12">
-                        Gulab Jain
-                      </Col>
-                      <Col lg="3" md="6" sm="12">
-                        Sindhu Priya
-                      </Col>
-                      <Col lg="3" md="6" sm="12">
-                        Nihanth Reddy
+                      <Col className="col-lg-9">&nbsp;</Col>
+                      <Col>
+                        <div align="right" style={{fontSize:"10px"}}>Under the Guidance of Dr. Kishor Buddha</div>
                       </Col>
                     </Row>
                   </div>
-                  <div className="row justify-content-center">
-                          <div className="text-center">
-                              <a className="btn btn-social-icon btn-google" href="http://google.com/+"><i className="fa fa-google-plus"></i></a>
-                              <a className="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i className="fa fa-facebook"></i></a>
-                              <a className="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i className="fa fa-linkedin"></i></a>
-                              <a className="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i className="fa fa-twitter"></i></a>
-                              <a className="btn btn-social-icon btn-google" href="http://youtube.com/"><i className="fa fa-youtube"></i></a>
-                              <a className="btn btn-social-icon" href="mailto:"><i className="fa fa-envelope-o"></i></a>
-                          </div>
-                  </div>
+                  <br></br>
                   <div className="row justify-content-center">             
                       <div className="col-auto">
                           <p>Copyright GITAM,BENGALURU © 2020. All rights reserved.</p>

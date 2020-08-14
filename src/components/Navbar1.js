@@ -6,6 +6,7 @@ import leaderboard from '../leaderboard';
 import Dashboard from '../Dashboard';
 import personaldetails from '../personaldetails';
 import changepassword from '../changepassword';
+import Calender from '../Calender';
 
 class Navbar1 extends React.Component{
     constructor(props) {
@@ -60,6 +61,7 @@ class Navbar1 extends React.Component{
         <Switch>
             <Route exact path="/Dashboard" component={Dashboard} />
             <Route exact path="/leaderboard" component={leaderboard} />
+            <Route exact path="/Calender" component={Calender}/>
             <Route exact path="/personaldetails" component={personaldetails} />
             <Route exact path="/changepassword" component={changepassword} />
         </Switch>
